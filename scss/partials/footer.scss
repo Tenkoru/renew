@@ -1,0 +1,28 @@
+.footer__top {
+    margin-top: 54px;
+    margin-bottom: 57px;
+    @media ($screenMobile) {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    @media ($screenS) {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    @media ($screenXS) {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+}
+.footer__bottom {
+    padding-top: 40px;
+    padding-bottom: 9px;
+    background-color: #a5c7ec;
+    @media ($screenMobile) {
+        padding-top: 30px;
+        padding-bottom: 15px;
+    }
+    @media ($screenXS) {
+        padding-top: 15px;
+    }
+}

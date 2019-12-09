@@ -1,0 +1,107 @@
+.certificate-list {
+    padding-top: 3.8%;
+    padding-bottom: 10.75%;
+    @media ($screenMobile) {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+.certificate-list__title {
+    text-align: center;
+}
+.contacts__info {
+    padding-top: 39px;
+    padding-left: 30px;
+}
+.certificate-list__list {
+    margin-top: 90px;
+    margin-bottom: 0;
+    padding: 0;
+    list-style: none;
+    @media ($screenTablet) {
+        margin-top: 30px;
+    }
+    .slick-arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 30px;
+        height: 100%;
+        background-color: transparent;
+        border: none;
+        font-size: 0;
+        cursor: pointer;
+        &:focus {
+            outline: none;
+        }
+        &::before {
+            position: absolute;
+            content: "";
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            background-color: $colorTitle;
+            transition: all .3s;
+            border: 1px solid $colorTitle;
+            transition: all .3s;
+        }
+        &::after {
+            position: absolute;
+            content: "";
+            top: 50%;
+            left: 50%;
+            width: 8px;
+            height: 8px;
+            background-color: transparent;
+            transition: all .3s;
+        }
+        &:hover {
+            &::before {
+                background-color: #fff;
+            }
+            &::after {
+                border-color: $colorTitle;
+            }
+        }
+    }
+    .slick-prev {
+        left: -35px;
+        @media ($screenDesktop) {
+            left: 5px;
+        }
+        &::after {
+            border-top: 2px solid #fff;
+            border-left: 2px solid #fff;
+            transform: translate(-50%, -50%) rotate(-45deg);
+        }
+    }
+    .slick-next {
+        right: -35px;
+        @media ($screenDesktop) {
+            right: 5px;
+        }
+        &::after {
+            border-right: 2px solid #fff;
+            border-bottom: 2px solid #fff;
+            transform: translate(-50%, -50%) rotate(-45deg);
+        }
+    }
+}
+.certificate-list__img {
+    width: 272px;
+    height: 365px;
+    @media ($screenTablet) {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        max-height: 100%;
+        object-fit: contain;
+    }
+}
+.certificate-list__link {
+    display: flex;
+    justify-content: center;
+}

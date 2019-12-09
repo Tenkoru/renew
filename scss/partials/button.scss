@@ -1,0 +1,23 @@
+.button {
+    display: inline-block;
+    background-color: $colorButtonBg;
+    text-align: center;
+    color: #ffffff;
+    height: 62px;
+    line-height: 62px;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all .3s;
+    border: 2px solid $colorButtonBg;
+    cursor: pointer;
+    &:hover {
+        color: $colorButtonBg;
+        background-color: #fff;
+    }
+    @media ($screenMobile) {
+        height: 62px;
+        line-height: 62px;
+        font-size: 24px;
+    }
+}

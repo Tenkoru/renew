@@ -1,0 +1,13 @@
+@mixin text-highlighted {
+    position: relative;
+    &::before {
+        position: absolute;
+        content: "";
+        width: 3000px;
+        height: 100%;
+        top: 0;
+        right: 0;
+        background-color: $colorTextHighlighted;
+        z-index: -1;
+    }
+}

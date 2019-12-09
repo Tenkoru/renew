@@ -1,0 +1,75 @@
+.buy__info {
+    display: flex;
+    flex-direction: column;
+    padding-top: 37px;
+    padding-bottom: 21px;
+    padding-left: 57px;
+    width: 37%;
+    @media ($screenLaptop) {
+        width: 100%;
+        padding-top: 30px;
+        padding-right: 30px;
+        padding-left: 30px;
+        padding-bottom: 20px;
+    }
+    @media ($screenXS) {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+.buy__wrapper {
+    border: 1px solid #a5c7ec;
+    border-top-width: 25px;
+    display: flex;
+    justify-content: space-between;
+    @media ($screenLaptop) {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+}
+.buy {
+    padding-top: 8.15%;
+    padding-bottom: 9%;
+    overflow: hidden;
+    @media ($screenMobile) {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+.buy__text {
+    margin-top: 32px;
+    @media ($screenMobile) {
+        margin-top: 20px;
+    }
+}
+.buy__button {
+    margin-top: 33px;
+    height: 46px;
+    line-height: 46px;
+    max-width: 200px;
+    margin-left: 24px;
+    font-size: 24px;
+    @media ($screenLaptop) {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+    @media ($screenMobile) {
+        margin-top: 20px;
+    }
+}
+.buy__img-wrapper {
+    width: 63%;
+    padding-right: 9%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    @media ($screenLaptop) {
+        display: none;
+    }
+}
+.buy__img {
+    position: absolute;
+    top: 0;
+    right: 15%;
+}

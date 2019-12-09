@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'Merriweather';
+    src: url('Merriweather-LightIt.woff2') format('woff2'),
+        url('Merriweather-LightIt.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Arial';
+    src: url('ArialMT.woff2') format('woff2'),
+        url('ArialMT.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('OpenSans.woff2') format('woff2'),
+        url('OpenSans.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Calibri';
+    src: url('Calibri.woff2') format('woff2'),
+        url('Calibri.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+

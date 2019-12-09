@@ -1,0 +1,26 @@
+.footer-menu {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media ($screenXS) {
+        flex-direction: column;
+    }
+}
+.footer-menu__link {
+    display: block;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-family: $fontMain;
+    color: $colorText;
+    transition: all .3s;
+    @media ($screenTablet) {
+        text-align: center;
+    }
+    &:hover {
+        color: $colorTitle;
+    }
+}

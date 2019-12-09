@@ -1,0 +1,26 @@
+.dealer__title {
+    text-align: center;
+    padding-right: 35%;
+    @media ($screenDesktop) {
+        padding-right: 0;
+    }
+}
+.dealer__wrapper {
+    padding-top: 38px;
+    padding-bottom: 76px;
+    @media ($screenMobile) {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        background-image: url(../img/form_bg-clear__small.png) !important;
+    }
+}
+.dealer__form-wrapper {
+    padding-top: 83px;
+    transform: translateX(5%);
+    @media ($screenDesktop) {
+        transform: none;
+    }
+    @media ($screenMobile) {
+        padding-top: 20px;
+    }
+}

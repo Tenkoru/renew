@@ -1,0 +1,90 @@
+header {
+    padding-top: 6px;
+    padding-bottom: 15px;
+    position: relative;
+    @media ($screenTablet) {
+        padding-bottom: 0;
+        padding-top: 0;
+    }
+    &.menu--opened {
+        .header__button {
+            &::before {
+                border-top-color: transparent;
+                border-top-width: 0px;
+                height: 0;
+                top: 50%;
+                transform: translate(-50%, -50%) rotate(-45deg);
+            }
+            &::after {
+                border-bottom-color: transparent;
+                border-bottom-width: 0px;
+                height: 0;
+                top: 50%;
+                transform: translate(-50%, -50%) rotate(45deg);
+            }
+        }
+        .main-nav {
+            @media ($screenTablet) {
+                transform: translateY(0);
+            }
+        }
+    }
+}
+.header__filler {
+    display: none;
+    @media ($screenTablet) {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background-color: #fff;
+        z-index: 2;
+    }
+}
+.header__button {
+    display: none;
+    @media ($screenTablet) {
+        position: absolute;
+        top: 50%;
+        right: 12px;
+        width: 30px;
+        height: 20px;
+        background-color: transparent;
+        border: none;
+        transform: translateY(-50%);
+        display: block;
+        cursor: pointer;
+        
+        &:focus {
+            outline: none;
+        }
+        &::before,
+        &::after {
+            position: absolute;
+            content: "";
+            width: 100%;
+            transition: all .3s, border 0s;
+        }
+        &::before {
+            top: 0;
+            border-top: 2px solid $colorTitle;
+            height: calc(50% - 3px);
+            left: 50%;
+            transform: translateX(-50%);
+            border-bottom: 2px solid $colorTitle;
+        }
+        &::after {
+            bottom: 0;
+            border-top: 2px solid $colorTitle;
+            height: calc(50% - 3px);
+            left: 50%;
+            transform: translateX(-50%);
+            border-bottom: 2px solid $colorTitle;
+        }
+    }
+    @media ($screenS) {
+        right: 0;
+    }
+}

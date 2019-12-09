@@ -1,0 +1,30 @@
+a {
+    font-family: $fontLink;
+}
+button,
+input {
+    font-family: $fontInput;
+}
+.text {
+    font-family: $fontMain;
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 0;
+    letter-spacing: 0.025em;
+    line-height: 1.22;
+}
+.text--highlighted {
+    @include text-highlighted;
+}
+.title {
+    font-size: 3rem;
+    font-family: $fontTitle;
+    color: $colorTitle;
+    font-style: italic;
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.title--color-gray {
+    color: $colorText;
+}

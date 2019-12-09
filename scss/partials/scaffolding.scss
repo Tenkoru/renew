@@ -1,0 +1,68 @@
+body {
+    background-color: #fff;
+    color: $colorText;
+    font-family: $fontMain;
+    font-weight: normal;
+}
+html {
+    font-size: 16px;
+    @media ($screenLaptop) {
+        font-size: 14px;
+    }
+    @media ($screenTablet) {
+        font-size: 13px;
+    }
+    @media ($screenMobile) {
+        font-size: 12px;
+    }
+    @media ($screenXS) {
+        font-size: 11px;
+    }
+}
+.body--ovh {
+    overflow: hidden;
+}
+* {
+    box-sizing: border-box;
+}
+
+.content {
+    overflow: hidden;
+}
+.container {
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+    @media ($screenLaptopL) {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    @media ($screenLaptop) {
+        max-width: 900px;
+    }
+    @media ($screenTablet) {
+        max-width: 700px;
+    }
+    @media ($screenMobile) {
+        max-width: none;
+    }
+}
+
+.sections {
+    display: flex;
+    flex-direction: column;
+}
+.overlay {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.7;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+}
+.overlay--active {
+    display: block;
+}
