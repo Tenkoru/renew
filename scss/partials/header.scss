@@ -2,6 +2,11 @@ header {
     padding-top: 6px;
     padding-bottom: 15px;
     position: relative;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1;
     @media ($screenTablet) {
         padding-bottom: 0;
         padding-top: 0;
