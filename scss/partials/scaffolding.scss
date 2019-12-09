@@ -51,8 +51,7 @@ html {
 .sections {
     display: flex;
     flex-direction: column;
-    padding-top: 166px;
-    @media ($screenTablet) {
+    @media ($screenMobile) {
         padding-top: 89px;
     }
     @media ($screenS) {

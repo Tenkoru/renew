@@ -2,15 +2,19 @@ header {
     padding-top: 6px;
     padding-bottom: 15px;
     position: relative;
-    position: fixed;
-    left: 0;
-    top: 0;
+
     width: 100%;
     z-index: 1;
     background-color: #fff;
     @media ($screenTablet) {
         padding-bottom: 0;
         padding-top: 0;
+        
+    }
+    @media ($screenMobile) {
+        position: fixed;
+        left: 0;
+        top: 0;
     }
     &.menu--opened {
         .header__button {
@@ -62,7 +66,7 @@ header {
         transform: translateY(-50%);
         display: block;
         cursor: pointer;
-        
+
         &:focus {
             outline: none;
         }
@@ -71,7 +75,7 @@ header {
             position: absolute;
             content: "";
             width: 100%;
-            transition: all .3s, border 0s;
+            transition: all 0.3s, border 0s;
         }
         &::before {
             top: 0;
