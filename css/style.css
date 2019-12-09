@@ -552,7 +552,8 @@ header {
   left: 0;
   top: 0;
   width: 100%;
-  z-index: 1; }
+  z-index: 1;
+  background-color: #fff; }
   @media (max-width: 991px) {
     header {
       padding-bottom: 0;
